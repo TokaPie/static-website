@@ -1,0 +1,60 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming  
+Semester: 2023A
+Assessment: Assignment 1
+Author: Luu Van Thien Toan
+ID: S3979512
+Acknowledgement:-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name = "viewport" content="witdth= device-width,initial-scale=1.0">
+    <title> Toka's Amazing Bookstore </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c5fbd10a4.js" crossorigin="anonymous"></script></head>
+
+<body>
+    <div class="header"> <!-- Header, Includes Logo + Nav bar  -->
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Toka's logo" ></a>
+            <div class="nav-links" id="navLinks">            
+                <i class="far fa-times-circle" onclick="hideMenu()" id="icon"></i>                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category1.html">Category 1</a></li>
+                    <li><a href="category2.html">Category 2</a></li>
+                    <li><a href="categoryN.html">Category N+1</a></li>
+                    <li><a href="contact.html">Category N+1</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()" id="icon"></i>    
+        </nav>
+        
+        
+        <div class="text-box">
+            <h1> Category Numero Uno</h1>
+            <p>A rocket knows where it isn't because it's not a missile
+            </p>
+            <a href="index.html" class="hero-button">Visit us to know more</a>
+        </div>
+    </div>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+</script>
+
+
+</body>
+</html>
