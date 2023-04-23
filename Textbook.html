@@ -1,0 +1,200 @@
+<!-- 
+RMIT University Vietnam
+Course: COSC2430 Web Programming  
+Semester: 2023A
+Assessment: Static Website
+Author: Luu Van Thien Toan
+ID: 3979512
+Acknowledgement: 
+- Approach for Header and contact form goes to https://www.youtube.com/@EasyTutorialsVideo
+- Some styling and user-friendly design approaches to Huynh Ngoc Giang My
+- Credit for all book covers and images used go to their respective authors and publishers
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name = "viewport" content="witdth= device-width,initial-scale=1.0">
+    <title> Toka's Amazing Bookstore </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c5fbd10a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav> <!-- Header, Includes Logo + Nav bar  -->
+        <a href="index.html"><img src="images/logo.png" alt="Toka's logo" id="logo"></a>
+        <div class="nav-links" id="navLinks">            
+            <i class="far fa-times-circle" onclick="hideMenu()" id="icon"></i>                
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Fiction.html">Fiction</a></li>
+                <li><a href="Non-Fiction.html">Non-Fiction</a></li>
+                <li><a href="Nerd.html">"Nerd"</a></li>
+                <li id="Active"><a href="Textbook.html">Textbook</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()" id="icon"></i>    
+    </nav>
+
+    <div class="main"> 
+        <h4 class="title"><a href="Fiction.html"> Math-Science </a></h4>  <!-- Math-Science category  -->
+        <section class="format">
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Math-Science/1.jpg" alt="Math 1">
+                    </span> <br>
+                    <span>Cambridge AS & A Levels Pure Mathematics 1 Coursebook</span> <br>
+                    <span class="author">Julian Gilbey, Sue Pemberton</span>
+               </a>
+            </div>
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Math-Science/2.jpg" alt="Physics">
+                    </span> <br>
+                    <span>Cambridge AS & A Levels Physics Coursebook</span> <br>
+                    <span class="author"> David Sang, Graham Jones, Gurinder Chadha</span>
+                </a>
+            </div>
+    
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Math-Science/3.png" alt="Chemistry">
+                    </span> <br>
+                    <span>Cambridge AS & A Levels Chemistry Coursebook</span> <br>
+                    <span class="author"> Lawrey Rian, Roger Norris</span>
+                </a>
+            </div>
+
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Math-Science/4.png" alt="Biology">
+                    </span> <br>
+                    <span>Cambridge AS & A Levels Biology Coursebook</span> <br>
+                    <span class="author"> Mary Jones, Richard Fosbery</span>
+                </a>
+            </div>
+        </section>
+
+        <h4 class="title"><a href="Non-Fiction.html">Humanities</a></h4> <!-- Humanities category  -->
+        <section class="format">
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Humanities/1.jpg" alt="European History">
+                    </span> <br>
+                    <span>Modern European History 1789-1939</span> <br>
+                    <span class="author"> Derrik Murphy & Russell Williams</span>
+               </a>
+            </div>
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Humanities/2.jpg" alt="Art 1">
+                    </span> <br>
+                    <span>Art Through the Ages</span> <br>
+                    <span class="author"> Fred S. Kleiner</span>
+                </a>
+            </div>
+    
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Humanities/3.jpg" alt="An unapologetic cook book">
+                    </span> <br>
+                    <span>Introduction to Art: Design, Context, Meaning</span> <br>
+                    <span class="author"> Pamela J. Sachant</span>
+                </a>
+            </div>
+
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Humanities/4.jpg" alt="Tiger tanks">
+                    </span> <br>
+                    <span>IELTS Academic 15 (With asnwers)</span> <br>
+                    <span class="author"> Cambridge</span>
+                </a>
+            </div>
+        </section>
+
+        <h4 class="title"><a href="Non-Fiction.html">Social-Sciences</a></h4> <!-- The "Nerd" category  -->
+        <section class="format">
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Social-Sciences/1.jpg" alt="Grimgar">
+                    </span> <br>
+                    <span>Cambridge AS & A Levels Psychology Coursebook</span> <br>
+                    <span class="author"> Julia Russell, Fiona Lintern, Lizzie Gauntlett, ...</span>
+               </a>
+            </div>
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Social-Sciences/2.jpg" alt="Conan">
+                    </span> <br>
+                    <span>Cambridge AS & A Levels Complete Economics</span> <br>
+                    <span class="author"> Terry Cooks, Clive Riches, Richard Taylor</span>
+                </a>
+            </div>
+    
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Social-Sciences/3.jpg" alt="The Amazing Spider-Man">
+                    </span> <br>
+                    <span>Political Science: An Introduction</span> <br>
+                    <span class="author"> Michael G. Roskin, Robert L. Cord, James A. Medeiros, Walter S. Jones</span>
+                </a>
+            </div>
+
+            <div class="book">
+                <a href="detail.html">
+                    <span id="book-img">
+                        <img src="images/Textbook/Social-Sciences/4.jpg" alt="Milk and Mocha">
+                    </span> <br>
+                    <span>Barbri Bar Review: Civil Procedure, Constitutional Law, Contracts</span> <br>
+                    <span class="author"> Barbri </span>
+                </a>
+            </div>
+
+        </section>
+
+    </div>
+    
+        </section>
+    </div>
+    
+    <footer> <!-- Footer -->
+        <div class="content">
+            <p>Email: onlythebestbookstoreever@notascam.com</p>
+            <p>Phone Number: (+84)123 456 789</p>
+            <div class="socials">
+                <h4>Our Socials</h4>
+                    <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+            </div>
+        </div>
+
+        <div class="content-side">
+            <h4 >About Us</h4>
+            <a href="#">Privacy Policy</a> <br>
+            <a href="#">Terms & Conditions</a> <br>
+            <a href="contact.html">Contact Us</a> <br>
+            <a href="#"> Copyright</a> <br>
+        </div>
+        
+        <div class="copyright">
+            <p>Ⓒ2023 Toka's(Luu Van Thien Toan) Amazing Bookstore.</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

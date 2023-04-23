@@ -1,38 +1,72 @@
-/*RMIT University Vietnam
-  Course: COSC2430 Web Programming
-  Semester: 2023A
-  Assessment: Assignment 1
-  Author: Luu Van Thien Toan
-  ID: S3979512
-  Acknowledgement: */
+/*
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Luu Van Thien Toan
+ID: S3979512
+Acknowledgement: 
+*/
 
-
+/* Importing custom fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
 
 *{
     margin: 0;
-    padding: 0;
-
+    padding: 0;   
+    text-decoration: none;
+    color:#fff;
 }
 
-.header{
-    min-height: 100vh;
-    width: 100%;
+#logo{
+    width: 150px;
+    display: block;
+    justify-content: center;
+}
+body{
     background-color: #d3c8a7;
-    background-position: center;
-    background-size: cover;
-    position:relative;
-
 }
-.header img{ /*Logo*/
+.main{ /* Some Styling and positioning stuff*/
+    background-color: #d3c8a7;
+    margin-inline: 150px;
+    padding-top: 50px;
+}
+
+.main img{ /*Logo*/
     width: 30%;
 }
 
+.format{  /* Flexbox*/
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*Header*/
+#Active{ /*Tells user what page they're on*/
+    text-decoration: underline;
+    font-weight: bold;
+    color:#fff;
+    border:solid black ;
+}
+
 nav{
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.66);
+    background-color: #d3c8a7;
     display:flex;
-    padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    
 }
 
 nav img{
@@ -75,26 +109,215 @@ position: relative;
     width:100%;
 }
 
-.text-box{
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    font-family:  'Noto Sans JP', sans-serif;
+
+#icon{
+    display: none;
 }
 
-.text-box h1{
+
+/*--------------------------------------------------------------------------*/
+
+/*Footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:grey;
+}
+
+footer .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    margin-inline: 70px;
+}
+
+footer .content-side{
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+    padding-top: 50px;
+    padding-right: 400px;
+}
+
+footer h4{
+    font-size: 18px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer .socials{
+    color:#fff;
+}
+
+footer .socials i:hover{
+    color: brown;
+    cursor: pointer;
+}
+
+
+footer a:hover{
+    color:brown;
+    text-decoration: underline;
+}
+
+footer .copyright{
+    align-self: center;
+    width: 100%;
+    margin-inline: 70px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+.title *{ /* Category and sub-category name text */
+    font-size: 32px;
     font-family: 'Times New Roman', Times, serif;
+    align-self: left;
+    margin-top: 40px;
+    padding-top: 30px;
+    color: red;
+    font-family: 'Alkatra', cursive;
+}
+
+/*Book: This is styling for the book images, name and author*/
+.book{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    background-color: rgb(222, 207, 167);
+    width: 250px;
+    height: 400px;
+    max-height: 400px;
+    padding: 8px 8px;
+    border: 1px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.5s;
+}
+
+
+.book img{
+    width: 200px;
+    height: 300px;
+    align-self: center;
+    padding: 12px;
+    border:1px solid black;
+}
+
+
+.book:hover{
+    box-shadow: 10px 10px 20px rgb(255, 255, 255);
+}
+
+.author{
+font-size: 12px;
+color:rgb(85, 24, 59)
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*Detail page*/
+
+.breadcrumb a:hover{
+    color:brown;
+}
+
+#details{
+    display: flex;
+    width: 100%;
+    padding-top:80px;
+    padding-bottom: 110px;
+}
+
+#details .big-img{
+    width: 40%;
+    margin-right: 15px;
+}
+
+.detail-img{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 700px;
+}
+
+#details *{
+    font-family:'Noto Sans JP', sans-serif;
+}
+
+
+#details .detail{
+    width: 50%;
+    padding-top: 30px;
     
 }
 
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 14px;
+#details .detail h3{
+    padding: 20px 0 15px 0;
+    font-size: 30px;
+    text-decoration: underline;
 }
+
+#details .detail h1{
+    padding: 20px 0 15px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#details .detail h2{
+    font-size: 26px;
+}
+
+
+#details .detail h4{
+    font-size: 12px;
+    text-decoration: underline;
+    color: black;
+}
+
+#details .detail button{
+    background-color: brown;
+    color: #fff;
+    font-size: 35px;
+    font-style: weight;
+    margin-top: 15px;
+    align-items: center;
+    cursor: pointer;   
+}
+
+
+#details .detail p{
+    line-height: 25px;
+    font-size: 15px;
+}
+
+
+.big-img img{
+    height: 448px;
+    border: 2px solid black;
+}
+
+.big-img img:hover{
+    box-shadow: 1px 1px 10px;
+}
+
+.small{
+    display: flex;
+    flex-direction: column;
+    width: 14%;
+}
+
+.small img{
+    height: 145px;
+    border: 1px solid black;
+}
+
+.small img:hover {
+    box-shadow: 1px 1px 10px;
+}
+
 
 .hero-button{
     display: inline-block;
@@ -114,11 +337,7 @@ position: relative;
     transition: 0.5s;
 }
 
-#icon{
-    display: none;
-}
-
-@media(max-width: 750px){
+@media(max-width: 750px){ /**/
     .text-box h1{
         font-size: 20px;
     }
@@ -136,9 +355,9 @@ position: relative;
         position: absolute;
         background: #f44336;
         height: 100vh;
-        width:200px;
+        width:100px;
         top:0;
-        right:-500px;
+        right:-200;
         text-align: left;
         z-index: 2;
         
@@ -146,10 +365,71 @@ position: relative;
     nav .fa{
         display: block;
         color: #fff;
+        margin: 10px;
         font-size: 22px;            
         cursor: pointer;
     }
     .nav-links ul{
         padding: 30px;
-     }    
+    }
+
+    .format {
+        justify-content: space-around;
+    }
+    
+    #icon{
+        display: initial;
+    }
+
+    /*Details*/
+    #details{
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+    }
+    
+    .detail-img{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .big-img img{
+        width: 333px;
+    }
+
+    .small{
+        display: inline-flex;
+        flex-direction: row;
+        width: 342px;
+        justify-content: space-around;
+    }
+
+    .small img{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #details .detail{
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+    }
+
+    .button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+        min-width: 220px;
+        flex-wrap: wrap;
+    }
+
+    .button button{
+        max-width: 110px;
+    }
+
 }
