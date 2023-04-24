@@ -8,9 +8,10 @@ ID: S3979512
 Acknowledgement: 
 */
 
-/* Importing custom fonts*/
+/*---------------------- Importing custom fonts------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 *{
     margin: 0;
@@ -46,9 +47,8 @@ body{
     margin: auto;
 }
 
-/*--------------------------------------------------------------------------*/
 
-/*Header*/
+/*--------------------Header--------------------------*/
 #Active{ /*Tells user what page they're on*/
     text-decoration: underline;
     font-weight: bold;
@@ -66,6 +66,7 @@ nav{
     z-index: 999;
     top: 0;
     left: 0;
+    margin-bottom: 30px;
     
 }
 
@@ -115,30 +116,20 @@ position: relative;
 }
 
 
-/*--------------------------------------------------------------------------*/
 
-/*Footer*/
+/*--------------------Footer----------------------*/
 footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color:grey;
-}
-
-footer .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 15px;
-    margin-inline: 70px;
 }
 
 footer .content-side{
     display: flex;
-    flex-direction: column;
-    align-self: left;
-    padding-top: 50px;
-    padding-right: 400px;
+    flex-direction: row;
+    padding-top: 20px;
+    align-self: center;
 }
 
 footer h4{
@@ -166,10 +157,10 @@ footer a:hover{
 footer .copyright{
     align-self: center;
     width: 100%;
-    margin-inline: 70px;
+    padding-left: 35vw;
 }
 
-/*--------------------------------------------------------------------------*/
+
 
 .title *{ /* Category and sub-category name text */
     font-size: 32px;
@@ -216,9 +207,7 @@ font-size: 12px;
 color:rgb(85, 24, 59)
 }
 
-/*--------------------------------------------------------------------------*/
-
-/*Detail page*/
+/*----------------Detail page-----------------*/
 
 .breadcrumb a:hover{
     color:brown;
@@ -278,7 +267,7 @@ color:rgb(85, 24, 59)
 }
 
 #details .detail button{
-    background-color: brown;
+    background-color:pink;
     color: #fff;
     font-size: 35px;
     font-style: weight;
@@ -325,10 +314,11 @@ color:rgb(85, 24, 59)
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 20px;
     background: transparent;
     position: relative;
     cursor:pointer;
+    margin-left: 22vw;
 }
 
 .hero-button:hover{
@@ -337,7 +327,172 @@ color:rgb(85, 24, 59)
     transition: 0.5s;
 }
 
-@media(max-width: 750px){ /**/
+
+
+/*--------------- Contact Us Page ----------------------*/
+.map{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.map iframe{
+    width: 100%;
+
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px; 
+}
+
+.contact-col div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-family: 'Noto Sans JP', sans-serif ;
+}
+    
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+    font-family: 'Inter', sans-serif;}
+
+.contact-col div h5{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/*---------------------Formatting and styling the contact form-To be filled out by user-----------------------*/
+.contact-col input,textarea{
+    color: black;
+    margin-left: 10vw;
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.intro-form{
+    width: 80%;
+    margin-left: 10vw;
+    padding-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.intro-form h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.intro-form p{
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.drop-menu{
+    font-family: 'Inter', sans-serif;
+    display: block;
+    margin-left: 10vw;
+    width: 80%;
+    background: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    height: 15px;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.box-menu{
+    font-family: 'Inter', sans-serif;
+    display: block;
+    margin-left: 10vw;
+    width: 80%;
+    color: black;
+    background: white;
+    padding-top: 15px;
+    padding-bottom: 80px;
+    margin-bottom: 15px;
+    height: 20px;
+    font-size: 13px;
+    justify-content: center;
+    
+}
+
+.drop-menu label{
+    color: gray;
+    font-family: 'Inter', sans-serif ;
+}
+
+.box-menu p,label{
+    color: black;
+}
+
+
+.drop-menu option{
+    color: black;
+}
+
+.drop-menu p{
+    color: black;
+}
+
+.radioh{
+    color: black;
+}
+
+.radioh p{
+    color: gray;
+}
+
+.radioh option{
+    color: black;
+}
+.purpose{
+    color: black;
+    font-family: 'Inter', sans-serif ;
+    font-size: 15px;
+}
+
+.epic{
+    width: 80%;
+    margin-left: 35vw;
+    padding-bottom: 20px;
+    
+}
+
+.epic h1{
+    font-size: 40px;
+    color: #f44336;
+}
+
+.epic p{
+    font-style: italic;
+    color: palevioletred;
+}
+
+video{
+    margin-left: 35vw;
+}
+
+@media(max-width: 750px){ /*Adaptation for smaller devices*/
     .text-box h1{
         font-size: 20px;
     }
@@ -352,7 +507,7 @@ color:rgb(85, 24, 59)
 
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: #f44336;
         height: 100vh;
         width:100px;
@@ -360,7 +515,7 @@ color:rgb(85, 24, 59)
         right:-200;
         text-align: left;
         z-index: 2;
-        
+        transition: 1s;
     }
     nav .fa{
         display: block;
@@ -387,7 +542,7 @@ color:rgb(85, 24, 59)
         display: flex;
         flex-direction: column;
         align-items: start;
-    
+        padding-left: 25%;
     }
     
     .detail-img{

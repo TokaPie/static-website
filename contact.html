@@ -6,9 +6,8 @@ Assessment: Static Website
 Author: Luu Van Thien Toan
 ID: 3979512
 Acknowledgement: 
-- Approach for Header and contact form goes to https://www.youtube.com/@EasyTutorialsVideo
-- Some styling and user-friendly design approaches to Huynh Ngoc Giang My
 - Credit for all book covers and images used go to their respective authors and publishers
+- Book Description: Amazon.com, Goodreads.com
 -->
 
 <!DOCTYPE html>
@@ -37,27 +36,121 @@ Acknowledgement:
         <i class="fas fa-bars" onclick="showMenu()" id="icon"></i>    
     </nav>
 
-    
+<!--------------------------Contact Form------------------------>    
+    <div class="intro-form"> 
+        <h1>
+            CONTACT FORM            
+        </h1>
+        <p>
+            Please fill this out to reach us in the most efficient manner
+        </p>
+    </div>
 
-    
-    <footer> <!-- Footer -->
-        <div class="content">
-            <p>Email: onlythebestbookstoreever@notascam.com</p>
-            <p>Phone Number: (+84)123 456 789</p>
-            <div class="socials">
-                <h4>Our Socials</h4>
-                    <i class="fa-brands fa-facebook-f fa-2xl"></i>
-                    <i class="fa-brands fa-twitter fa-2xl"></i>
-                    <i class="fa-brands fa-instagram fa-2xl"></i>
+    <div class="contact-col">
+        <form>
+            <span class="drop-menu">
+                <label>&nbsp &nbsp Contacting Purpose:</label>
+                <select class="purpose">
+                    <option id="buy" value="Buy">I want to buy books</option>
+                    <option id="sell" value="Sell">I want to sell books</option>
+                </select>
+            </span>
+            <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number" required>
+            <span class="box-menu">
+                <label>&nbsp&nbsp Contact preference:</label>
+                <div class="flex-box">
+                    <input type="checkbox" id="email" name="checkbox">
+                    <label>E-Mail</label> 
+                </div>
+                <div class="flex-box">
+                    <input type="checkbox" id="phone" class="checkbox">
+                    <label for="phone">Phone</label> 
+                </div>
+            </span>
+            <span class="box-menu">
+                <p>&nbsp&nbsp Would you like to recieve weekly newsletters?:</p>
+                <input type="radio" id="yes" name="answer" value="Yes" checked="checked">
+                <label >Yes</label><br>
+                <input type="radio" id="no" name="answer" value="No">
+                <label>No</label><br>
+            </span>
+            <textarea rows="8" placeholder="Notes"></textarea>
+            <button type="reset" class="hero-button">Clear Form</button>
+            <button type="submit" class="hero-button">Submit</button>
+        </form>
+    </div>
+
+    <!-----------------Inspirational Quote and A Video (Rich Media)--------------------->
+    <div class="epic">
+        <h1>"Knowledge Is Power"</h1> <br>
+        <p>-Francis Bacon, Meditationes Sacrae (1597)</p>
+    </div>
+
+    <video width="420" height="240" controls>
+        <source src="video/Reading A Book _ Cinematic B-Roll _ Sohaib Ahmad Films.mp4" type="video/mp4">
+    </video>
+
+
+    <!-------------------------Map, Contact Information------------------->
+    <section class="map">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15680.28689427301!2d106.6957667!3d10.7289515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2sRMIT%20University%20Vietnam%20-%20Saigon%20South%20campus!5e0!3m2!1sen!2s!4v1682281930684!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>   
+
+    <section class="contact-us">
+
+        <div class="row">
+
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>702 Đ. Nguyễn Văn Linh, Tân Hưng</h5>
+                        <p> Quận 7, Thành Phố Hồ Chí Minh</p>
+                        <h5>702 Nguyen Van Linh Street, Tan Hung</h5>
+                        <p>District 7, Ho Chi Minh City</p>
+                    </span>
+                </div>
             </div>
+            
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+83 123 456 789</h5>
+                        <p>Monday - Friday | 9:30 - 18:00</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>onlythebestbookstoreever@notascam.com</h5>
+                        <p>Email us your queries</p>
+                    </span>
+                </div>
+            </div>
+
+            
         </div>
 
+
+        
+    </section>
+    
+    <footer> <!-- Footer -->
+
         <div class="content-side">
-            <h4 >About Us</h4>
-            <a href="#">Privacy Policy</a> <br>
-            <a href="#">Terms & Conditions</a> <br>
-            <a href="contact.html">Contact Us</a> <br>
-            <a href="#"> Copyright</a> <br>
+            <h4 >About Us: </h4>
+            <a href="#"> &nbsp&nbsp&nbsp&nbsp&nbsp Privacy Policy &nbsp&nbsp</a> 
+            <a href="#">&nbsp&nbsp Terms & Conditions &nbsp&nbsp</a> 
+            <a href="contact.html">&nbsp&nbsp Contact Us &nbsp&nbsp</a> 
+            <a href="#">&nbsp&nbsp Copyright</a> 
         </div>
         
         <div class="copyright">
